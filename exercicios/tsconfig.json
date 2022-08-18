@@ -1,10 +1,21 @@
-// prettier-ignore
 {
-  "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
-  "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig.json to read more about this file */
-
-    /* Completeness */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+	"compilerOptions": {
+		"jsx": "react",
+		"jsx": "react",
+		"target": "es2020",
+		"lib": [
+			"ES2020",
+			"ESNext.AsyncIterable"
+		],
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"module": "commonjs",
+		"rootDir": "./",
+		"outDir": "./build",
+		"esModuleInterop": true,
+		"strict": false,
+		"allowJs": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	}
 }
