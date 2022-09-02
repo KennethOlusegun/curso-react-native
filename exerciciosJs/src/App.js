@@ -1,7 +1,11 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
 
-import DigiteSeuNome from './components/DigiteSeuNome'
+import FlexBoxV4 from './components/layout/FlexBoxV4'
+// import FlexBoxV3 from './components/layout/FlexBoxV3'
+// import FlexBoxV2 from './components/layout/FlexBoxV2'
+// import FlexBoxV1 from './components/layout/FlexBoxV1'
+// import DigiteSeuNome from './components/DigiteSeuNome'
 // import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 // import ListaProdutos from './components/produtos/ListaProdutos'
 // import UsuarioLogado from './components/UsuarioLogado'
@@ -22,8 +26,12 @@ import DigiteSeuNome from './components/DigiteSeuNome'
 
 export default () => (
 	<SafeAreaView>
-		<DigiteSeuNome />
+		<FlexBoxV4 />
         {/*
+		<FlexBoxV3 />
+		<FlexBoxV2 />
+		<FlexBoxV1 />
+		<DigiteSeuNome />
 		<ListaProdutosV2 />
 		<UsuarioLogado usuario={{nome: 'Kenneth Olusegun', email: 'kennetholusegun@gmail.com'}} />
 		<Familia>
@@ -61,8 +69,9 @@ export default () => (
 
 const styles = StyleSheet.create({
 	App: {
-		flex: 1,
+		flexGrow: 1,
 		justifyContent: 'center',
 		alignItems: 'center',
+		padding: 20
 	}
 })
