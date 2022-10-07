@@ -1,3 +1,4 @@
+/* eslint-disable no-dupe-keys */
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import params from './src/params';
@@ -18,6 +19,11 @@ export default class App extends Component {
         <Field opened nearMines={2} />
         <Field opened nearMines={3} />
         <Field opened nearMines={6} />
+        <Field mined />
+        <Field mined opened />
+        <Field mined opened exploded />
+        <Field flagged />
+        <Field flagged opened />
       </View>
     );
   }
@@ -26,10 +32,13 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f5fcff',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
+    margin: 10,
   },
 });
