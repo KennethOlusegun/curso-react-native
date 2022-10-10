@@ -1,4 +1,4 @@
-/* eslint-disable no-dupe-keys */
+/* eslint-disable no-unused-vars */
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import params from './src/params';
